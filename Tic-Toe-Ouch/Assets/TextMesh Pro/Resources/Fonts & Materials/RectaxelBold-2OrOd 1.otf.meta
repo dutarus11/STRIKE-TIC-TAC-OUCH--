@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ccdb3b28c1e82b24f96cfa6754eea68d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - RECTAXEL
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d2567b30923c60e4995f92f545cf3145, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
