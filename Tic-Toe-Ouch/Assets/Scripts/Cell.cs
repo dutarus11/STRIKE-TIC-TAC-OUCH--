@@ -9,9 +9,17 @@ public class Cell : MonoBehaviour
 
     private TMPro.TextMeshPro text;
 
+    public GameObject cellObj;
+   
 
-    public void SetText(string _text) // set X O andSquare Objects 
+    public void SetText(GameObject _text) // set X O andSquare Objects 
     {
+        if (cellObj == null)
+        {
+            //cellObj = GameObject.Empty();
+        }
+
+        cellObj = _text;
         //if (text == null)
         //{
         //    text = GetComponentInChildren<TMPro.TextMeshPro>();

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameBoardController : MonoBehaviour
+public class GameBoardController : Cell
 {
     public Cell[] cells;
     public TMPro.TextMeshProUGUI token;
@@ -12,7 +12,7 @@ public class GameBoardController : MonoBehaviour
     
     private string[] tokens = new string[] { "X", "0" };
     private int currentToken = 0;
-    
+    private GameObject cellObj1;
     private TicTacToeOuchEngine engine = new TicTacToeOuchEngine();
     // Start is called before the first frame update
     void Awake()
@@ -24,7 +24,10 @@ public class GameBoardController : MonoBehaviour
                   var index = Array.IndexOf(cells, o);
                   clicked(index);
               };
-            cell.SetText("");
+            // cell.SetText("");
+            
+            cellObj1 = cellObj;
+            cellObj1.SetActive(false);
         }
         
     }
