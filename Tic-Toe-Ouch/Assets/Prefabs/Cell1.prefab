@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5626154554110919557}
   m_Layer: 0
   m_Name: Cell1
-  m_TagString: Untagged
+  m_TagString: cBatch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26dae8b7279e5145a628d6c807810a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellObj: {fileID: 1249344636458549772}
+  cellbatch: {fileID: 0}
+  alterCellBatch: {fileID: 0}
+  cell: {fileID: 1249344636458549772}
+  alterCell: {fileID: 0}
 --- !u!65 &5626154554110919557
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,33 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
-    public event EventHandler click;
+    public GameObject cellbatch;
+    public GameObject alterCellBatch;
+    public GameObject cell;
+    public GameObject alterCell;
 
-    private TMPro.TextMeshPro text;
-
-    public GameObject cellObj;
-   
-
-    public void SetText(GameObject _text) // set X O andSquare Objects 
+    void OnMouseDown()
     {
-        if (cellObj == null)
-        {
-            //cellObj = GameObject.Empty();
-        }
+        //cell = cellwhole;
+        Debug.Log("Success");
 
-        cellObj = _text;
-        //if (text == null)
-        //{
-        //    text = GetComponentInChildren<TMPro.TextMeshPro>();
-        //}
-        //text.text = _text;
-    }
-    private void OnMouseDown()
-    {
-        click?.Invoke(this, EventArgs.Empty);
     }
 }
