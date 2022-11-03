@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
-    public GameObject cellbatch;
-    public GameObject alterCellBatch;
-    public GameObject cell;
-    public GameObject alterCell;
 
-    void OnMouseDown()
+    public GameObject[] cells;
+
+    void Awake()
     {
-        //cell = cellwhole;
-        Debug.Log("Success");
+        cells = GameObject.FindGameObjectsWithTag("Cell1");
+
+        foreach (GameObject cell in cells)
+        {
+            cell.SetActive(false);
+        }
 
     }
+
+    void Update()
+    {
+       
+        
+    }
+
+   
+
 }
