@@ -32,14 +32,5 @@ public class GameController : MonoBehaviour
         
     }
 
-    public void OnMouseDown()
-    {
-        
-       //getCell.SetActive(false);
-        
-
-        Debug.Log("Success");
-        //cell.SetActive(true);
-        //alterCell.SetActive(false);
-    }
+   
 }

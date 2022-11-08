@@ -6,6 +6,7 @@ TagManager:
   tags:
   - cBatch
   - Cell1
+  - alterC
   layers:
   - Default
   - TransparentFX
