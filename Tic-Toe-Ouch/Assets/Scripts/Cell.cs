@@ -7,6 +7,8 @@ public class Cell : MonoBehaviour
 
     //public GameObject cell;
     public GameObject sp;
+    public GameObject sp2;
+    public bool isTapped = false;
     //bool isEnabled;
     //public GameObject getAlter;
     void Start()
@@ -49,7 +51,11 @@ public class Cell : MonoBehaviour
 
         //print(getAlter.name);
         //sp.enabled ^= true;
-        sp.SetActive(false);
+        isTapped = true;
+        GameObject childObject = Instantiate(sp) as GameObject;
         
+        sp2.SetActive(false);
+
+
     }
 }
