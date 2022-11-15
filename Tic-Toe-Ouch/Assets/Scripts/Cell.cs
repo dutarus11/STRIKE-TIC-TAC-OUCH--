@@ -5,57 +5,34 @@ using UnityEngine;
 public class Cell : MonoBehaviour
 {
 
-    //public GameObject cell;
-    public GameObject sp;
-    public GameObject sp2;
+   
+    public GameObject cell;
+    public GameObject alter;
+    public Transform transPos;
     public bool isTapped = false;
-    //bool isEnabled;
-    //public GameObject getAlter;
+    
     void Start()
     {
-        //cell = GameObject.FindGameObjectWithTag("Cell1");
-        // getAlter = GameObject.FindGameObjectWithTag("alterC");
-
-        //  DisabledObjects();
-       
-       
-       
+        
+                   
     }
 
     void Update()
     {
-       // ActivateObjects();
 
     }
 
-   //void DisabledObjects()
-   //{
-   //     //cell = GameObject.FindGameObjectWithTag("Cell1");
-   //     cell.SetActive(false);
-   //     getAlter.SetActive(true);
-
-   // }
-
-    //void ActivateObjects()
-    //{
-        
-    //}
-    public void OnMouseDown()
+    public void OnMouseDown() //click and point to create and deestroy objects 
     {
-        //if (true)
-        //{
-
-        //}
-        //  getAlter.SetActive(false);
-        //   cell.SetActive(true);
-
-        //print(getAlter.name);
-        //sp.enabled ^= true;
         isTapped = true;
-        GameObject childObject = Instantiate(sp) as GameObject;
-        
-        sp2.SetActive(false);
+        transPos = alter.transform;       
+        Instantiate(cell, transform.position, Quaternion.identity);
+        Debug.Log("Alter Destroyed!");
+        DestroyGameObject();
+    }
 
-
+    void DestroyGameObject()
+    {
+        DestroyImmediate(alter, true);
     }
 }

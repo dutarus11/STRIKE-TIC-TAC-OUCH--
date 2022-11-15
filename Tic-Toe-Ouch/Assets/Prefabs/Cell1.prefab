@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26dae8b7279e5145a628d6c807810a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sp: {fileID: 1249344636458549772}
-  sp2: {fileID: 5555844814949952882, guid: 305064aa83fe336409df1aeb8c682f92, type: 3}
+  cell: {fileID: 1249344636458549772}
+  alter: {fileID: 5555844814949952882, guid: 305064aa83fe336409df1aeb8c682f92, type: 3}
   isTapped: 0
 --- !u!65 &5626154554110919557
 BoxCollider:
