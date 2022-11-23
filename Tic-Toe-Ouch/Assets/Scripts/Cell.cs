@@ -8,8 +8,10 @@ public class Cell : MonoBehaviour
    
     public GameObject cell;
     public GameObject alter;
+    Projectile projectileScript;
     public Transform transPos;
-    public bool isTapped = false;
+    [SerializeField]
+    private bool isTapped = false;
     
     void Start()
     {
@@ -27,12 +29,14 @@ public class Cell : MonoBehaviour
         isTapped = true;
         transPos = alter.transform;       
         Instantiate(cell, transform.position, Quaternion.identity);
+        
+
         Debug.Log("Alter Destroyed!");
         DestroyGameObject();
     }
 
     void DestroyGameObject()
     {
-        DestroyImmediate(alter, true);
+        DestroyImmediate(alter, true);       
     }
 }
