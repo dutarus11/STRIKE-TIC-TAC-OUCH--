@@ -47,7 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cell: {fileID: 1249344636458549772, guid: f54c7250e45fdb44bb1944a9a840d057, type: 3}
+  negCell: {fileID: 2507367844253985061, guid: 895c3a7a81919ac4785671f7bc957306, type: 3}
   alter: {fileID: 2252180062186082552}
+  transPos: {fileID: 0}
   isTapped: 0
 --- !u!65 &587836073721093995
 BoxCollider:
