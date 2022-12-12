@@ -60,13 +60,5 @@ public class Cell : MonoBehaviour
 
        
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "NegCell1")
-        {
-            Debug.Log("Collision Succeeded");
-        }
-        
-        //Destroy(negCell);
-    }
+    
 }
