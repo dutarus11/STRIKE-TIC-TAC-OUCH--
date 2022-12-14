@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
     private void Start()
     {
        
-        
+
     }
 
     // Update is called once per frame
@@ -30,6 +30,7 @@ public class Timer : MonoBehaviour
         CountDown();
         SetTimerText();
         SetWarningTxt();
+                
     }
 
     public void CountDown()
@@ -37,14 +38,14 @@ public class Timer : MonoBehaviour
         if (ctDown == true)
         {
             totalTime -= Time.deltaTime;
-            if (totalTime <= 5)
+            if (totalTime <= 10)
             {
                 isActive = true;
-                timerTxt.color = Color.red;
+                timerTxt.color = Color.red;                
                 if (totalTime <= 0)
                 {
                     Debug.Log("End scene!");
-                }
+                }                
             }
            
         }
@@ -57,9 +58,21 @@ public class Timer : MonoBehaviour
 
     private void SetWarningTxt()
     {
-        if (isActive == true)
+        if (isActive == true && totalTime < 8)
         {
-            warningTxt.SetActive(true);
+            warningTxt.SetActive(true);           
         }
+
+        if (totalTime < 5)
+        {
+            isActive = false;
+            warningTxt.SetActive(false);
+        }
+        
     }
+
+  
+
+   
+  
 }

@@ -8,7 +8,7 @@ public class Cell : MonoBehaviour
     public GameObject cell;
     public GameObject negCell;
     public GameObject alter;
-    Projectile projectileScript;
+    
     public Transform transPos;
     [SerializeField]
     private bool isTapped = false;
