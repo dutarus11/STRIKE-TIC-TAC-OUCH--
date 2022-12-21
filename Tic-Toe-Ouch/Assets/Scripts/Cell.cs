@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.SceneManagement;
 public class Cell : MonoBehaviour
-{
-  
+{  
     public GameObject cell;
     public GameObject negCell;
     public GameObject alter;
     
     public Transform transPos;
+
     [SerializeField]
     private bool isTapped = false;
 
-    int gameObjectCount;
+    public int gameObjectCount;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class Cell : MonoBehaviour
         Instantiate(cell, transform.position, Quaternion.identity);
         StartCoroutine(WaitForObject());       
         Debug.Log("Alter Destroyed!");
+        gameObjectCount++;
         DestroyGameObject();
     }
     IEnumerator WaitForObject()
@@ -41,7 +43,8 @@ public class Cell : MonoBehaviour
         {
             Instantiate(negCell, -transform.position, Quaternion.identity);
             isTapped = false;
-            
+           
+           
         }
         
         yield return new WaitForSeconds(3f);

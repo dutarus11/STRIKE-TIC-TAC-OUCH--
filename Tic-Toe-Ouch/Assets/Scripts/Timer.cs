@@ -7,8 +7,7 @@ public class Timer : MonoBehaviour
 {
     [Header("Component")]
     public TextMeshProUGUI timerTxt;
-    
-   
+      
 
     [Header("Timer Settings")]
     public float totalTime;
@@ -53,7 +52,7 @@ public class Timer : MonoBehaviour
 
     private void SetTimerText()
     {
-        timerTxt.text = totalTime.ToString("0");
+        timerTxt.text = "Timer:" + totalTime.ToString("0");
     }
 
     private void SetWarningTxt()
